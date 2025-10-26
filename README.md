@@ -84,3 +84,6 @@ Install the silicone phone retaining straps by forcing them into the Phone Holde
 Attach your coaxial cable and antennas.
 
 Power on by plugging in the DC barrel jack and connecting a USB battery pack.
+
+# Licensing
+These files are free for personal use. If you wish to sell these models, please reach out first. Modifications are welcome and encouraged, as are pull requests so that all variants are available at this repository. If your modified version adds additional features or capabilities and you wish to offer it for sale, please reach out (I will likely agree that you should be able to freely sell your modified design).
