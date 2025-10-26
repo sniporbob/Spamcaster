@@ -5,17 +5,29 @@ I am still finishing uploading files/instructions/etc.
 
 # Parts List
 1x GL.iNet GL-AXT1800
+
 1x Generic Phone Plate Carrier Mount (example: https://www.amazon.com/dp/B0DYTPWVCR)
+
 2x u.fl to SMA Female pigtail (6 inch or shorter)
+
 1x 5.5mm x 2.1mm Screw Lock DC Barrel Power Plug (example: https://www.amazon.com/dp/B08KQ7PP21)
+
 1x 90 degree USB C Cable (cut and solder the red/black wires to the power plug/socket to make the power cord)
+
 1x 50mm length M3 bolt
+
 1x 35mm length M3 bolt
+
 17x between 8mm - 12mm length M3 bolt
+
 (Ideally, order all bolts as part of an assorted M3 bolt kit)
+
 2x M3 nylon lock nut
+
 17x M3 heat set insert
+
 2x LMR-200 or equivalent cable, length as desired
+
 2x 2.4GHz + 5GHz wifi antennas
 
 # Configuration
