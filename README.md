@@ -30,6 +30,10 @@ I am still finishing uploading files/instructions/etc.
 
 2x 2.4GHz + 5GHz wifi antennas
 
+Optional for Molle Seals:
+
+4x 96817A220 Thread Forming Screw For Thin Plastic (https://www.mcmaster.com/products/torx-thread-forming-screws/steel-thread-forming-screws-for-thin-plastic/?s=torx-thread-forming-screws)
+
 # Configuration
 You'll want to configure the wireless interfaces for 802.11s mesh, and also set up at least one interface as an access point. Detailed instructions to come shortly.
 The instructions are more or less the same as setting up the Rocket M5 for mesh operation, except the AXT-1800 was recently reported to already have the necessary packages preinstalled:
