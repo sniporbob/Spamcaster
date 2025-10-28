@@ -35,12 +35,125 @@ Optional for Molle Seals:
 4x 96817A220 Thread Forming Screw For Thin Plastic (https://www.mcmaster.com/products/torx-thread-forming-screws/steel-thread-forming-screws-for-thin-plastic/?s=torx-thread-forming-screws)
 
 # Configuration
-You'll want to configure the wireless interfaces for 802.11s mesh, and also set up at least one interface as an access point. Detailed instructions to come shortly.
-The instructions are more or less the same as setting up the Rocket M5 for mesh operation, except the AXT-1800 was recently reported to already have the necessary packages preinstalled:
+Do this before assembly!
+
+You'll want to configure the wireless interfaces for 802.11s mesh, and also set up at least one interface as an access point. The instructions are more or less the same as setting up the Rocket M5 for mesh operation, but recent firmware versions include all necessary packages. You can get the Rocket M5 setup guide here:
 
 https://teamawarenesskit.org/viewtopic.php?t=36
 
-The AXT-1800 has 2 wireless interfaces (2.4GHz and 5GHz) that get set up independently, then bridged.
+The AXT-1800 has 2 wireless radios (2.4GHz and 5GHz). There are two types of networks that we will need to set up. The first type is an Access Point. This is what your EUD (phone) will connect to in order to access the mesh network. You can also connect a laptop, tablet, etc. It appears like a regular wifi network. The second type is an 802.11s mesh network. This is what links all of the Spamcasters and other mesh devices together. You can set up one, both, or neither of these types of networks on each of the wireless interfaces. There is likely a network speed benefit to having the Access Point on only one radio and the mesh network on the other radio. There is likely a reliability advantage to having the mesh network on both radios. There is a device compatibility advantage to having the Access Point on both radios, although *most* devices nowadays have both 2.4GHz and 5GHz capability. In this walkthrough, we will set up an Access Point on the 5GHz radio, an 802.11s mesh network on the 5GHz radio, and another 802.11s mesh network on the 2.4GHz radio. Screenshots coming soon!
+
+This setup has been tested with AXT1800 firmware version 4.8.2 from GL.iNet.
+
+You probably need to update your firmware, so grab a computer or laptop with an ethernet port and follow the instructions here: https://docs.gl-inet.com/router/en/4/faq/debrick/
+
+For those knowledgeable about networking, the short version is plug in the ethernet, hold the reset button, plug in the router power, wait for 5 flashes then release. Set a static IP for your computer of 192.168.1.2 and open 192.168.1.1 in your browser. Upload the img file and wait for it to reboot. Set your IP back to automatic DHCP. If this doesn't make sense, follow the more in-depth instructions from that link.
+
+Open the router config page 192.168.8.1
+
+Set a password.
+
+Wifi doesn't matter, we will change it anyway.
+
+Skip the initial config popup with the X in the top right corner.
+
+Go to Advanced Settings on the left and then install/open LuCI.
+
+Log in with the password you just set (username is root).
+
+Go to Network - Wireless from the top menu.
+
+Remove all the preconfigured wifi networks.
+
+Save and apply changes by clicking the icon at the top left and Save & Apply.
+
+======== 5GHz Access Point ========
+
+Add a wifi interface to the radio0 AC/AX/N device.
+
+Configure it to either AX or N mode. Pick a channel. Recommend 20MHz width for longest range. All mesh devices must use the same settings here.
+
+Leave Mode as Access Point.
+
+ESSID is the wifi network name that EUDs and other devices can connect to.
+
+Set Network to Lan.
+
+Wireless Security tab - set WPA2-PSK and specify a Key (aka password).
+
+Other settings as desired. Defaults have best device compatibility.
+
+Save (FYI follow these same steps on the 2.4GHz radio1 if you want a 2.4GHz access point available).
+
+======== 5GHz 802.11s Mesh ========
+
+Add another interface to this same radio0 AC/AX/N device.
+
+SPECIFY THE SAME OPERATING FREQUENCY MODE, CHANNEL, AND WIDTH AS THE ACCESS POINT NETWORK YOU JUST SET UP
+
+Change Access Point mode to 802.11s
+
+Specify a Mesh Id (all mesh devices must use the same Mesh Id).
+
+Set Network to Lan.
+
+Wireless Security tab - set WPA3-PSK and specify a Key (aka password) (all mesh devices must use the same Key).
+
+Save (We will do these same steps again to add a mesh network to the 2.4GHz radio1 device).
+
+======== 2.4GHz 802.11s Mesh ========
+
+Add a wifi interface to the radio1 AX/B/G/N device.
+
+Specify a mode, channel, and width.
+
+Change the Access Point mode to 802.11s
+
+Specify a Mesh Id (all mesh devices must use the same Mesh Id).
+
+Set Network to Lan.
+
+Wireless Security tab - set WPA3-PSK and specify a Key (aka password) (all mesh devices must use the same Key).
+
+Save
+
+======== Set Hostname ========
+
+I recommend you go to System - System from the top menu and change the Hostname to whatever you want to name this radio.
+
+Save
+
+======== Set Spamcaster's IP Address ========
+
+Go to Network - Interfaces from the top menu.
+
+Edit the lan interface.
+
+Each Spamcaster must have a unique IPv4 address. Coordinate this amongst your group.
+
+Recommend 192.168.x.1 where x is a different number for each Spamcaster.
+
+IPv4 netmask is 255.255.0.0
+
+If you have a spamcaster or other mesh device connected to internet, you can specify it's IPv4 address in the IPv4 gateway.
+
+Click Unsaved Changes in top right, and Save & Apply.
+
+If you've changed the IPv4 address, I recommend you apply with revert after connectivity loss.
+
+You will have 90 seconds to connect to the AXT1800 and load the LuCI webpage at:
+
+http://[your_new_IPv4_address]:8080/cgi-bin/luci
+
+Uplug the ethernet cable, wait a few tens of seconds for the AXT1800 to reboot, and reconnect it to obtain a new IP address.
+
+Then you should be able to open the LuCI webpage.
+
+You will have to log back in.
+
+Check the Network - Wireless page and make sure all networks and radios are operational.
+
+If any say disabled, it may be necessary to reboot the device (or edit a setting such as the ESSID or Mesh Id and Save & Apply again).
 
 # Assembly
 Remove the silicone molle attachment straps from the generic phone mount by pulling/wiggling.
