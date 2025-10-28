@@ -137,9 +137,11 @@ IPv4 netmask is 255.255.0.0
 
 If you have a spamcaster or other mesh device connected to internet, you can specify it's IPv4 address in the IPv4 gateway.
 
+======== Applying Changes ========
+
 Click Unsaved Changes in top right, and Save & Apply.
 
-If you've changed the IPv4 address, I recommend you apply with revert after connectivity loss.
+If you've changed the IPv4 address, I recommend you "Apply with revert after connectivity loss".
 
 You will have 90 seconds to connect to the AXT1800 and load the LuCI webpage at:
 
