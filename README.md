@@ -45,6 +45,8 @@ The AXT-1800 has 2 wireless radios (2.4GHz and 5GHz). There are two types of net
 
 This setup has been tested with AXT1800 firmware version 4.8.2 from GL.iNet.
 
+Firmware: https://dl.gl-inet.com/router/axt1800/stable
+
 You probably need to update your firmware, so grab a computer or laptop with an ethernet port and follow the instructions here: https://docs.gl-inet.com/router/en/4/faq/debrick/
 
 For those knowledgeable about networking, the short version of the firmware update process is: plug in the ethernet cable, hold the reset button on the AXT1800, plug in the AXT1800 power, wait for 5 flashes and a solid light, then release. Set a static IP for your computer of 192.168.1.2 and open 192.168.1.1 in your browser. Upload the img file and wait for it to reboot. Set your IP back to automatic DHCP. If this doesn't make sense, follow the more in-depth instructions from that link.
