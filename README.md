@@ -51,6 +51,10 @@ You probably need to update your firmware, so grab a computer or laptop with an 
 
 For those knowledgeable about networking, the short version of the firmware update process is: plug in the ethernet cable, hold the reset button on the AXT1800, plug in the AXT1800 power, wait for 5 flashes and a solid light, then release. Set a static IP for your computer of 192.168.1.2 and open 192.168.1.1 in your browser. Upload the img file and wait for it to reboot. Set your IP back to automatic DHCP. If this doesn't make sense, follow the more in-depth instructions from that link.
 
+It is important to update the firmware. I encountered a significan't bug on the original firmware. Don't skip the firmware update.
+
+Once the firmware is updated, you can follow the below walkthrough to set up the router as discussed above. Feel free to adjust which radios have Access Points and which have mesh networks to suit your needs. The steps are identical between 2.4GHz and 5GHz.
+
 Open the router config page 192.168.8.1
 
 Set a password.
