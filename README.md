@@ -47,7 +47,7 @@ This setup has been tested with AXT1800 firmware version 4.8.2 from GL.iNet.
 
 You probably need to update your firmware, so grab a computer or laptop with an ethernet port and follow the instructions here: https://docs.gl-inet.com/router/en/4/faq/debrick/
 
-For those knowledgeable about networking, the short version is plug in the ethernet, hold the reset button, plug in the router power, wait for 5 flashes then release. Set a static IP for your computer of 192.168.1.2 and open 192.168.1.1 in your browser. Upload the img file and wait for it to reboot. Set your IP back to automatic DHCP. If this doesn't make sense, follow the more in-depth instructions from that link.
+For those knowledgeable about networking, the short version of the firmware update process is: plug in the ethernet cable, hold the reset button on the AXT1800, plug in the AXT1800 power, wait for 5 flashes and a solid light, then release. Set a static IP for your computer of 192.168.1.2 and open 192.168.1.1 in your browser. Upload the img file and wait for it to reboot. Set your IP back to automatic DHCP. If this doesn't make sense, follow the more in-depth instructions from that link.
 
 Open the router config page 192.168.8.1
 
