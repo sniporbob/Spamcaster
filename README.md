@@ -69,9 +69,13 @@ Log in with the password you just set (username is root).
 
 Go to Network - Wireless from the top menu.
 
+![1](https://github.com/sniporbob/Spamcaster/blob/main/Images/AXT1800SetupScreenshots/1.png)
+
 Remove all the preconfigured wifi networks.
 
 Save and apply changes by clicking the icon at the top left and Save & Apply.
+
+![2](https://github.com/sniporbob/Spamcaster/blob/main/Images/AXT1800SetupScreenshots/2.png)
 
 ======== 5GHz Access Point ========
 
@@ -85,9 +89,13 @@ ESSID is the wifi network name that EUDs and other devices can connect to.
 
 Set Network to Lan.
 
+![3](https://github.com/sniporbob/Spamcaster/blob/main/Images/AXT1800SetupScreenshots/3.png)
+
 Wireless Security tab - set WPA2-PSK and specify a Key (aka password).
 
 Other settings as desired. Defaults have best device compatibility.
+
+![4](https://github.com/sniporbob/Spamcaster/blob/main/Images/AXT1800SetupScreenshots/4.png)
 
 Save (FYI follow these same steps on the 2.4GHz radio1 if you want a 2.4GHz access point available).
 
@@ -103,7 +111,11 @@ Specify a Mesh Id (all mesh devices must use the same Mesh Id).
 
 Set Network to Lan.
 
+![5](https://github.com/sniporbob/Spamcaster/blob/main/Images/AXT1800SetupScreenshots/5.png)
+
 Wireless Security tab - set WPA3-PSK and specify a Key (aka password) (all mesh devices must use the same Key).
+
+![6](https://github.com/sniporbob/Spamcaster/blob/main/Images/AXT1800SetupScreenshots/6.png)
 
 Save (We will do these same steps again to add a mesh network to the 2.4GHz radio1 device).
 
@@ -119,19 +131,31 @@ Specify a Mesh Id (all mesh devices must use the same Mesh Id).
 
 Set Network to Lan.
 
+![7](https://github.com/sniporbob/Spamcaster/blob/main/Images/AXT1800SetupScreenshots/7.png)
+
 Wireless Security tab - set WPA3-PSK and specify a Key (aka password) (all mesh devices must use the same Key).
 
+![8](https://github.com/sniporbob/Spamcaster/blob/main/Images/AXT1800SetupScreenshots/8.png)
+
 Save
+
+If you've followed the steps you should have 2 mesh point interfaces and 1 master interface. If you've decided to set up a different combination of interfaces for mesh point and master, double check them now.
+
+![9](https://github.com/sniporbob/Spamcaster/blob/main/Images/AXT1800SetupScreenshots/9.png)
 
 ======== Set Hostname ========
 
 I recommend you go to System - System from the top menu and change the Hostname to whatever you want to name this radio.
+
+![10](https://github.com/sniporbob/Spamcaster/blob/main/Images/AXT1800SetupScreenshots/10.png)
 
 Save
 
 ======== Set Spamcaster's IP Address ========
 
 Go to Network - Interfaces from the top menu.
+
+![11](https://github.com/sniporbob/Spamcaster/blob/main/Images/AXT1800SetupScreenshots/11.png)
 
 Edit the lan interface.
 
@@ -143,9 +167,13 @@ IPv4 netmask is 255.255.0.0
 
 If you have a spamcaster or other mesh device connected to internet, you can specify it's IPv4 address in the IPv4 gateway.
 
+![12](https://github.com/sniporbob/Spamcaster/blob/main/Images/AXT1800SetupScreenshots/12.png)
+
+Save
+
 ======== Applying Changes ========
 
-Click Unsaved Changes in top right, and Save & Apply.
+Click "Unsaved Changes" in top right, and Save & Apply.
 
 If you've changed the IPv4 address, I recommend you "Apply with revert after connectivity loss".
 
