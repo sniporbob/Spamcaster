@@ -73,7 +73,7 @@ Go to Network - Wireless from the top menu.
 
 Remove all the preconfigured wifi networks.
 
-Save and apply changes by clicking the icon at the top left and Save & Apply.
+Save and apply changes by clicking Unsaved Changes at the top right, then click Save & Apply. This will remove all wifi networks from the device. Make sure you're connected to the AXT1800 via ethernet!
 
 ![2](https://github.com/sniporbob/Spamcaster/blob/main/Images/AXT1800SetupScreenshots/2.png)
 
